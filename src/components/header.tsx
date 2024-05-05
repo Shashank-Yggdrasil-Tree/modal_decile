@@ -26,10 +26,12 @@ const Header = () => {
 
 	return (
 		<>
-			<div className="bg-black text-white sticky top-0 p-2 flex flex-row-reverse gap-x-8 w-100 font-medium bg-[#050a30]">
-				<DrawerDemo />
-			</div>
-			<MediaQuery minWidth={1224}>
+			<MediaQuery minWidth={320} maxWidth={1024}>
+				<div className="bg-black text-white sticky top-0 p-2 flex flex-row-reverse gap-x-8 w-100 font-medium bg-[#050a30]">
+					<DrawerDemo />
+				</div>
+			</MediaQuery>
+			<MediaQuery minWidth={1024}>
 				<div className="bg-black text-white sticky top-0 p-2 flex flex-row-reverse gap-x-8 w-100 font-medium">
 					{tabs.map((item) => (
 						<Link key={item.name} href={item.path}>

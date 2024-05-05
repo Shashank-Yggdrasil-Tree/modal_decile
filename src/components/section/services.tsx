@@ -30,6 +30,7 @@ const ServiceSection = () => {
 			<div className="flex-1">
 				<h2 className="text-left text-2xl md:text-6xl font-semibold pb-5 pl-2 md:pl-0">Our Services</h2>
 				<Image
+					unoptimized
 					src="/img/hand_shake.png"
 					alt="profile"
 					width="800"

@@ -16,6 +16,7 @@ import {
 	DrawerTitle,
 	DrawerTrigger,
 } from '@/components/ui/drawer';
+import Link from 'next/link';
 
 const data = [
 	{
@@ -66,11 +67,39 @@ export function DrawerDemo() {
 		setGoal(Math.max(200, Math.min(400, goal + adjustment)));
 	}
 
+	const tabs = [
+		{
+			name: 'Contact Us',
+			path: '#contact',
+		},
+		{
+			name: 'Our Services',
+			path: '#services',
+		},
+		{
+			name: 'About Us',
+			path: '#profile',
+		},
+		{
+			name: 'Home',
+			path: '#home',
+		},
+	];
+
 	return (
 		<Drawer>
 			<DrawerTrigger asChild>
 				<FaBars />
 			</DrawerTrigger>
+			{/* <DrawerContent>
+				<ul>
+					{tabs.map((item) => (
+						<Link key={item.name} href={item.path}>
+							{item.name}
+						</Link>
+					))}
+				</ul>
+			</DrawerContent> */}
 			<DrawerContent>
 				<div className="mx-auto w-full max-w-sm">
 					<DrawerHeader>

@@ -9,7 +9,14 @@ const ProfileSection = () => {
 			className="h-screen flex md:flex-row flex-col gap-2 justify-center items-center py-20 md:pt-0 overflow-hidden min-h-screen"
 		>
 			<div className="flex-1">
-				<Image src="/img/bldg.png" alt="profile" width="700" height="700" className="p-2 max-w-auto"></Image>
+				<Image
+					unoptimized
+					src="/img/bldg.png"
+					alt="profile"
+					width="700"
+					height="700"
+					className="p-2 max-w-auto"
+				></Image>
 			</div>
 			<div className="flex-1 px-2 md:px-4 md:p-0 ">
 				<h2 className="font-semibold text-3xl md:text-5xl my-1 md:my-4 text-left">Profile</h2>

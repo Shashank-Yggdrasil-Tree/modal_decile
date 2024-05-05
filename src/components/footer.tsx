@@ -24,7 +24,7 @@ const Footer = () => {
 			<div id="contact" className="h-screen flex flex-col justify-center px-2 md:flex-row md:gap-x-5 md:items-end">
 				<div>
 					<p className="font-semibold text-[#f4f6fc] pb-4 text-lg md:text-6xl">Let's work together.</p>
-					<Image src="/img/team_table.png" alt="modal decile" height="800" width="800" className="pb-4"></Image>
+					<Image src="./img/team_table.png" alt="modal decile" height="800" width="800" className="pb-4"></Image>
 				</div>
 				<div className="flex flex-col gap-y-4 md:pb-4">
 					{content.map((t) => (

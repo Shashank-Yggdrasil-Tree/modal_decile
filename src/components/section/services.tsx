@@ -24,7 +24,7 @@ const ServiceSection = () => {
 
 	return (
 		<div
-			id="profile"
+			id="services"
 			className="h-screen flex md:flex-row flex-col gap-2 justify-center items-center pt-10 md:pt-0 overflow-hidden md:px-10 min-w-full overflow-y-auto px-2"
 		>
 			<div className="flex-1">
